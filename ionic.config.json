@@ -1,0 +1,7 @@
+{
+  "name": "iot-ecoshower-setup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
