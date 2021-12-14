@@ -1,0 +1,46 @@
+.input-custom {
+  --background: white;
+  border-radius: 8px;
+  height: 34px;
+}
+
+.row-custom {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.buttom-blue-custom {
+  --box-shadow: none;
+  --color: #1890ff;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.buttom-green-custom {
+  --box-shadow: none;
+  background-color: #9bc235;
+  font-size: 12px;
+  padding: 1px;
+  text-transform: none;
+}
+
+.card-custom {
+  width: 30em;
+  margin: auto;
+  text-align: center;
+  background: rgba(22, 152, 183, 0.14);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.logo-custom {
+  width: 270px;
+  margin: auto;
+  padding-bottom: 35px;
+}
