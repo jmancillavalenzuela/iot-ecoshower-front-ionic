@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
+  leftImage: String;
 
-  constructor() { }
+  constructor() {
+    this.leftImage = "./assets/images/left-image-register.png";
+  }
 
   ngOnInit() {
   }
