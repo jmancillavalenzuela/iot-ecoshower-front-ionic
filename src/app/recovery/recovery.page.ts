@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'recovery.page.html',
   styleUrls: ['recovery.page.scss'],
 })
-export class HomePage {
+export class RecoveryPage {
 
   logo: String;
 
