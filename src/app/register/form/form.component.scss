@@ -1,0 +1,109 @@
+:root {
+    --main-font: 'Montserrat', sans-serif;
+}
+.form_container {
+    width: 482px;
+    height: 570px;
+    left: 839px;
+    top: 229px;
+    background-color: rgba(22, 152, 183, 0.14);
+    border-radius: 30px;
+}
+.form_title {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 41px;
+}
+.form_fieldset {
+    border: none;
+    text-align: center;
+}
+.form-group{
+    margin: 17px 12px 17px 12px;
+}
+.form-control {
+    width: 368px;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.form-control::placeholder {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #D9D9D9;
+    padding-left: 12px;
+    line-height: 24px;
+}
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-form-control {
+    width: 292px;
+    height: 42px;
+    margin-left: 0px;
+    border: 1px solid #D9D9D9;
+    border-radius: 0px 8px 8px 0px;
+}
+.second-form-control::placeholder {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #D9D9D9;
+    padding-left: 12px;
+    line-height: 24px;
+}
+.second-form-select {
+    appearance: none;
+    height: 46px;
+    width: 72px;
+    margin-right: 0px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #FFFFFF;
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #D9D9D9;
+    padding-left: 12px;
+}
+.second-form-select option {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #D9D9D9;
+    padding-left: 12px;
+    line-height: 24px;
+}
+.terms-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 26px;
+}
+.terms-label {
+    font-family: var(--main-font);
+    font-size: 14px;
+    padding-left: 12px;
+    line-height: 22px;
+}
+.register-btn {
+    font-family: var(--main-font);
+    color: #FFFFFF;
+    background-color: #9BC235;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 50px 8px 50px;
+    margin-left: 5px;
+}
+.login-anchor {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: #1890FF;
+    text-decoration: none;
+    margin-left: 40px;
+    line-height: 22px;
+}
