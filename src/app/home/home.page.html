@@ -5,7 +5,41 @@
         <ion-img [src]="leftImage"></ion-img>
       </ion-col>
       <ion-col>
-        Form
+        <ion-row class="row-custom">
+          <ion-col style="margin: auto">
+            <ion-img [src]="logo" class="logo-custom"></ion-img>
+            <ion-card class="card-custom">
+              <ion-card-header style="font-weight: bold; --color: black">
+                Iniciar Sesión
+              </ion-card-header>
+
+              <ion-card-content>
+                <ion-row>
+                  <ion-col size="12" style="text-align: left">
+                    <ion-input class="input-custom" placeholder="Email"></ion-input>
+                  </ion-col>
+                  <ion-col size="12" style="text-align: left">
+                    <ion-input class="input-custom" placeholder="Contraseña"></ion-input>
+                  </ion-col>
+                  <ion-col size="12" style="text-align: left; padding-top: 25px">
+                    <ion-button size="small" class="buttom-blue-custom" color="text">Olvidé mi Contraseña</ion-button>
+                  </ion-col>
+                  <ion-col size="6" style="text-align: left; padding-top: 25px">
+                    <ion-button size="small" class="buttom-green-custom" color="text">Iniciar Sesión</ion-button>
+                  </ion-col>
+                  <ion-col size="6" style="
+                      text-align: right;
+                      padding-top: 25px;
+                    ">
+                    <ion-button size="small" class="buttom-blue-custom" color="text">
+                      Registrarme
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
       </ion-col>
     </ion-row>
   </ion-grid>

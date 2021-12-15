@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   leftImage: String;
-
+  ecoshowerLogo: String;
+  
   constructor() {
     this.leftImage = "./assets/images/left-image-login.png";
-   }
+    this.ecoshowerLogo = "./assets/logo/ecoshower.png";
+  }
 
 }
