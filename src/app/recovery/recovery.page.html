@@ -9,26 +9,15 @@
           </ion-card-header>
 
           <ion-card-content>
-            <ion-row>
               <form [formGroup]="recoveryForm" (ngSubmit)="onSubmit()">
-                <ion-col size="12" style="text-align: left">
-                  <ion-input class="input-custom" placeholder="Email o Teléfono" formControlName="emailPhone">
-                  </ion-input>
-                </ion-col>
-                <ion-col size="6" style="text-align: left; padding-top: 25px">
-                  <ion-button size="small" class="buttom-green-custom" color="text" type="submit"
-                    [disabled]="!recoveryForm.valid">Recuperar contraseña</ion-button>
-                </ion-col>
-                <ion-col size="6" style="
-                  text-align: right;
-                  padding-top: 25px;
-                ">
-                  <ion-button size="small" class="buttom-blue-custom" color="text" (click)="onSignIn()">
-                    Ya tengo cuenta
-                  </ion-button>
-                </ion-col>
+                <ion-input class="input-custom" placeholder="Email o Teléfono" formControlName="emailPhone">
+                </ion-input>
+                <ion-button size="small" class="buttom-green-custom" color="text" type="submit"
+                  [disabled]="!recoveryForm.valid">Recuperar contraseña</ion-button>
+                <ion-button size="small" class="buttom-blue-custom" color="text" (click)="onSignIn()">
+                  Ya tengo cuenta
+                </ion-button>
               </form>
-            </ion-row>
           </ion-card-content>
         </ion-card>
       </ion-col>

@@ -14,50 +14,26 @@
               </ion-card-header>
 
               <ion-card-content>
-                <ion-row>
-                  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                    <ion-col size="12" style="text-align: left">
-                      <ion-input class="input-custom" placeholder="Nombre*" formControlName="fullName"></ion-input>
-                    </ion-col>
-                    <ion-col size="12" style="text-align: left">
-                      <ion-input class="input-custom" placeholder="Email*" formControlName="email"></ion-input>
-                    </ion-col>
-                    <ion-col size="12" style="text-align: left">
-                      <div formGroupName="address">
-                        <ion-input class="input-custom" placeholder="Dirección" formControlName="street"></ion-input>
-                        <ion-input class="input-custom" placeholder="Ciudad" formControlName="city"></ion-input>
-                        <ion-input class="input-custom" placeholder="Region" formControlName="state"></ion-input>
-                      </div>
-                    </ion-col>
-                    <ion-col size="12" style="text-align: left">
-                      <ion-input class="input-custom" placeholder="Teléfono*" formControlName="phone"></ion-input>
-                    </ion-col>
-                    <ion-col size="12" style="text-align: left">
-                      <ion-input class="input-custom" placeholder="Contraseña" formControlName="password"></ion-input>
-                    </ion-col>
-                    <ion-col size="12" style="text-align: left">
-                      <ion-input class="input-custom" placeholder="Confirmar Contraseña"
-                        formControlName="confirmPassword"></ion-input>
-                    </ion-col>
-                    <ion-col size="6" style="
-                      text-align: right;
-                      padding-top: 25px;
-                    ">
-                      <ion-button size="small" class="buttom-green-custom" color="text" type="submit"
-                        [disabled]="!registerForm.valid">
-                        Registrarme
-                      </ion-button>
-                    </ion-col>
-                    <ion-col size="6" style="
-                      text-align: right;
-                      padding-top: 25px;
-                    ">
-                      <ion-button size="small" class="buttom-blue-custom" color="text" (click)="onSignIn()">
-                        Ya tengo cuenta
-                      </ion-button>
-                    </ion-col>
-                  </form>
-                </ion-row>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                  <ion-input class="input-custom" placeholder="Nombre*" formControlName="fullName"></ion-input>
+                  <ion-input class="input-custom" placeholder="Email*" formControlName="email"></ion-input>
+                  <div formGroupName="address">
+                    <ion-input class="input-custom" placeholder="Dirección" formControlName="street"></ion-input>
+                    <ion-input class="input-custom" placeholder="Ciudad" formControlName="city"></ion-input>
+                    <ion-input class="input-custom" placeholder="Region" formControlName="state"></ion-input>
+                  </div>
+                  <ion-input class="input-custom" placeholder="Teléfono*" formControlName="phone"></ion-input>
+                  <ion-input class="input-custom" placeholder="Contraseña" formControlName="password"></ion-input>
+                  <ion-input class="input-custom" placeholder="Confirmar Contraseña" formControlName="confirmPassword">
+                  </ion-input>
+                  <ion-button size="small" class="buttom-green-custom text-align: left" color="text" type="submit"
+                    [disabled]="!registerForm.valid">
+                    Registrarme
+                  </ion-button>
+                  <ion-button size="small" class="buttom-blue-custom" color="text" (click)="onSignIn()">
+                    Ya tengo cuenta
+                  </ion-button>
+                </form>
               </ion-card-content>
             </ion-card>
           </ion-col>
