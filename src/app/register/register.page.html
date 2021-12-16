@@ -5,18 +5,63 @@
         <ion-img [src]="leftImage"></ion-img>
       </ion-col>
       <ion-col>
-        <ion-img [src]="ecoshowerLogo"></ion-img>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title style="text-align: center">Registro</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Keep close to Nature's heart... and break clear away, once in awhile,
-            and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            <ion-button expand="block">Registrarme</ion-button>
-            <ion-button expand="block">Registrarme</ion-button>
-          </ion-card-content>
-        </ion-card>
+        <ion-row class="row-custom">
+          <ion-col style="margin: auto">
+            <ion-img [src]="logo" class="logo-custom"></ion-img>
+            <ion-card class="card-custom">
+              <ion-card-header style="font-weight: bold; --color: black">
+                Registro
+              </ion-card-header>
+
+              <ion-card-content>
+                <ion-row>
+                  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <ion-col size="12" style="text-align: left">
+                      <ion-input class="input-custom" placeholder="Nombre*" formControlName="fullName"></ion-input>
+                    </ion-col>
+                    <ion-col size="12" style="text-align: left">
+                      <ion-input class="input-custom" placeholder="Email*" formControlName="email"></ion-input>
+                    </ion-col>
+                    <ion-col size="12" style="text-align: left">
+                      <div formGroupName="address">
+                        <ion-input class="input-custom" placeholder="Dirección" formControlName="street"></ion-input>
+                        <ion-input class="input-custom" placeholder="Ciudad" formControlName="city"></ion-input>
+                        <ion-input class="input-custom" placeholder="Region" formControlName="state"></ion-input>
+                      </div>
+                    </ion-col>
+                    <ion-col size="12" style="text-align: left">
+                      <ion-input class="input-custom" placeholder="Teléfono*" formControlName="phone"></ion-input>
+                    </ion-col>
+                    <ion-col size="12" style="text-align: left">
+                      <ion-input class="input-custom" placeholder="Contraseña" formControlName="password"></ion-input>
+                    </ion-col>
+                    <ion-col size="12" style="text-align: left">
+                      <ion-input class="input-custom" placeholder="Confirmar Contraseña"
+                        formControlName="confirmPassword"></ion-input>
+                    </ion-col>
+                    <ion-col size="6" style="
+                      text-align: right;
+                      padding-top: 25px;
+                    ">
+                      <ion-button size="small" class="buttom-green-custom" color="text" type="submit"
+                        [disabled]="!registerForm.valid">
+                        Registrarme
+                      </ion-button>
+                    </ion-col>
+                    <ion-col size="6" style="
+                      text-align: right;
+                      padding-top: 25px;
+                    ">
+                      <ion-button size="small" class="buttom-blue-custom" color="text" (click)="onSignIn()">
+                        Ya tengo cuenta
+                      </ion-button>
+                    </ion-col>
+                  </form>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
       </ion-col>
     </ion-row>
   </ion-grid>
