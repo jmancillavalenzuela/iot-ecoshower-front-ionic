@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recovery',
@@ -7,10 +9,15 @@ import { Component } from '@angular/core';
 })
 export class RecoveryPage {
 
-  logo: String;
+  logo = "./assets/logo/ecoshower.png";
 
-  constructor() {
-    this.logo = "./assets/logo/ecoshower.png";
+  recoveryForm = new FormGroup({
+    emailPhone: new FormControl('', Validators.required),
+  });
+  
+  constructor(public router: Router) { }
+
+  onSignIn() {
+    this.router.navigateByUrl('/home');
   }
-
 }
