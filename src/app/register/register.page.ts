@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class RegisterPage implements OnInit {
   leftImage = "./assets/images/left-image-register.png";
   ecoshowerLogo = "./assets/logo/ecoshower.png";
-  
+
   registerForm = new FormGroup({
     fullName: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
@@ -25,9 +25,9 @@ export class RegisterPage implements OnInit {
     acceptTerms: new FormControl(false),
   });
 
-  constructor(public router: Router) {}
-  
-  ngOnInit() {}
+  constructor(public router: Router) { }
+
+  ngOnInit() { }
 
   onSubmit() {
     console.warn(this.registerForm.value);

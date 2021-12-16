@@ -17,7 +17,8 @@
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                   <ion-input class="input-custom" placeholder="Email" formControlName="email"></ion-input>
                   <ion-input class="input-custom" placeholder="Contraseña" formControlName="password"></ion-input>
-                  <ion-button size="small" class="buttom-blue-custom" style="text-align: left;" color="text" (click)="onRecovery()">Olvidé mi
+                  <ion-button size="small" class="buttom-blue-custom" style="text-align: left;" color="text"
+                    (click)="onRecovery()">Olvidé mi
                     Contraseña</ion-button>
                   <ion-button size="small" class="buttom-green-custom" color="text" type="submit"
                     [disabled]="!loginForm.valid">
