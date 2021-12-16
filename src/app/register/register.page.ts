@@ -25,12 +25,9 @@ export class RegisterPage implements OnInit {
     acceptTerms: new FormControl(false),
   });
 
-  constructor(public router: Router) {
-  }
-
-  ngOnInit() {
-
-  }
+  constructor(public router: Router) {}
+  
+  ngOnInit() {}
 
   onSubmit() {
     console.warn(this.registerForm.value);
