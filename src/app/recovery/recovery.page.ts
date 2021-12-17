@@ -20,4 +20,8 @@ export class RecoveryPage {
   onSignIn() {
     this.router.navigateByUrl('/home');
   }
+
+  onSubmit() {
+    console.warn(this.recoveryForm.value);
+  }
 }
